@@ -80,6 +80,16 @@
   (major1) == 0 && (major2) <  3 || \
   (major1) == 0 && (major2) == 3 && (minor) <= 1)
 #endif /* MIN_VERSION_resource_pool */
+/* package tagsoup-0.14.8 */
+#ifndef VERSION_tagsoup
+#define VERSION_tagsoup "0.14.8"
+#endif /* VERSION_tagsoup */
+#ifndef MIN_VERSION_tagsoup
+#define MIN_VERSION_tagsoup(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  14 || \
+  (major1) == 0 && (major2) == 14 && (minor) <= 8)
+#endif /* MIN_VERSION_tagsoup */
 /* package text-2.0.1 */
 #ifndef VERSION_text
 #define VERSION_text "2.0.1"
