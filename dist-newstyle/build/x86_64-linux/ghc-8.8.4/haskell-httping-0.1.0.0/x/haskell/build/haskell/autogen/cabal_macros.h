@@ -10,6 +10,26 @@
   (major1) == 0 && (major2) <  1 || \
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 #endif /* MIN_VERSION_haskell_httping */
+/* package HDBC-2.4.0.4 */
+#ifndef VERSION_HDBC
+#define VERSION_HDBC "2.4.0.4"
+#endif /* VERSION_HDBC */
+#ifndef MIN_VERSION_HDBC
+#define MIN_VERSION_HDBC(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  4 || \
+  (major1) == 2 && (major2) == 4 && (minor) <= 0)
+#endif /* MIN_VERSION_HDBC */
+/* package HDBC-postgresql-2.5.0.1 */
+#ifndef VERSION_HDBC_postgresql
+#define VERSION_HDBC_postgresql "2.5.0.1"
+#endif /* VERSION_HDBC_postgresql */
+#ifndef MIN_VERSION_HDBC_postgresql
+#define MIN_VERSION_HDBC_postgresql(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  5 || \
+  (major1) == 2 && (major2) == 5 && (minor) <= 0)
+#endif /* MIN_VERSION_HDBC_postgresql */
 /* package base-4.13.0.0 */
 #ifndef VERSION_base
 #define VERSION_base "4.13.0.0"
@@ -30,6 +50,16 @@
   (major1) == 0 && (major2) <  11 || \
   (major1) == 0 && (major2) == 11 && (minor) <= 3)
 #endif /* MIN_VERSION_bytestring */
+/* package convertible-1.1.1.1 */
+#ifndef VERSION_convertible
+#define VERSION_convertible "1.1.1.1"
+#endif /* VERSION_convertible */
+#ifndef MIN_VERSION_convertible
+#define MIN_VERSION_convertible(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  1 || \
+  (major1) == 1 && (major2) == 1 && (minor) <= 1)
+#endif /* MIN_VERSION_convertible */
 /* package envparse-0.4.1 */
 #ifndef VERSION_envparse
 #define VERSION_envparse "0.4.1"

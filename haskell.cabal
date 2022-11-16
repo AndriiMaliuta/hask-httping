@@ -32,5 +32,8 @@ executable haskell
                , postgresql-simple
                , zlib >= 0.6.3.0
                , tagsoup
+               , convertible >= 1.1.1.0
+               , HDBC
+               , HDBC-postgresql
   -- hs-source-dirs:
   default-language:    Haskell2010
