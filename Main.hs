@@ -5,11 +5,20 @@ module Main where
 
 import Database.PostgreSQL.Simple
 import Network.HTTP.Client
-import Network.HTTP.Types.Status (statusCode)
+import Network.HTTP.Types.Status
 import Control.Monad
 import Data.Foldable
 import Data.Convertible
+import Data.Time.Clock.POSIX
 
+
+data Page = Page { id :: Integer, 
+                  title :: String, body :: String, 
+                  space_key :: String ,
+                  author_id :: Integer, 
+                  created_at :: String, 
+                  last_updated :: String,
+                  parent_id :: Integer}
 
 parseMy :: IO ()
 parseMy = do
@@ -17,8 +26,7 @@ parseMy = do
   request <- parseRequest "http://httpbin.org/get"
   resp <- httpLbs request manager
 
-  putStrLn $ "The status code was: " ++ (show $ statusCode $ responseStatus resp)
-  print $ responseBody resp 
+  print (statusMessage (responseStatus resp )) 
 
 
 get_pages_psql :: IO ()
