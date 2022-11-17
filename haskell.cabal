@@ -28,8 +28,9 @@ executable haskell
                , bytestring ^>= 0.11.3.1
                , envparse ^>= 0.4.1
                , time ^>=1.9.3
-               , http-client >= 0.7.13.1
                , postgresql-simple
+               , http-client >= 0.7.13.1
+               , http-conduit >= 2.3.8
                , zlib >= 0.6.3.0
                , tagsoup
                , convertible >= 1.1.1.0
